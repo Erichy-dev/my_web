@@ -29,41 +29,34 @@ function dropProjects(){
   <!-- z-30 -->
   <nav
     id="navbar"
-    class="bg-gray-800 fixed w-full top-0 text-indigo-400 shadow bg-cover bg-fixed py-1 max-h-20"
+    class="bg-gray-200 fixed w-full top-0 shadow bg-cover bg-fixed py-1 max-h-20"
   >
     <div
-      class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
+      class="w-full flex flex-col items-center justify-between mt-0 px-2 py-2 lg:py-6"
     >
-      <div class="pl-4 flex items-center">
+      <div class="pl-4">
         <a
-          class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          class="text-gray-900 no-underline hover:no-underline font-bold text-4xl"
           href="#"
         >
-          <!-- <svg
-            class="h-6 w-6 inline-block fill-current text-yellow-700"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z" />
-          </svg> -->
           DEVRIKI
         </a>
       </div>
 
-      <div class="block lg:hidden pr-4">
+      <!-- <div class="block lg:hidden pr-4">
         <button
           id="nav-toggle"
           class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-green-500 appearance-none focus:outline-none"
           @click="toggleMenu"
         >
-          <!-- <svg
+          <svg
             class="fill-current h-3 w-3"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
-          > -->
+          >
           <title class="fill-current h-3 w-3">MENU</title>
-          <!-- <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg> -->
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
         </button>
       </div>
 
@@ -105,7 +98,7 @@ function dropProjects(){
           </li>
           <li class="inline-block hover:text-green-900 py-2 px-4">ABOUT</li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
 </template>
