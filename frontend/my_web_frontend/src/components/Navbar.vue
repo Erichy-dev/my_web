@@ -1,43 +1,42 @@
 <script setup lang="ts">
-function toggleMenu(e: any) {
-  const droppedMenu = document.getElementById("nav-content");
-  const menuClass = droppedMenu?.classList;
-  const navClass = document.getElementById("navbar")?.classList
-  if (menuClass?.contains("hidden")) {
-    menuClass.remove("hidden");
-    navClass?.remove("max-h-20")
-  } else {
-    menuClass?.add("hidden");
-    navClass?.add("max-h-20")
-  }
-}
+// function toggleMenu(e: any) {
+//   const droppedMenu = document.getElementById("nav-content");
+//   const menuClass = droppedMenu?.classList;
+//   const navClass = document.getElementById("navbar")?.classList
+//   if (menuClass?.contains("hidden")) {
+//     menuClass.remove("hidden");
+//     navClass?.remove("max-h-20")
+//   } else {
+//     menuClass?.add("hidden");
+//     navClass?.add("max-h-20")
+//   }
+// }
 
 
-function dropProjects(){
-  const Projects = document.getElementById("project-dropdown")
-  const projectsClass = Projects?.classList
-  if (projectsClass?.contains("hidden")) {
-    projectsClass.remove("hidden")
-  } else {
-    projectsClass?.add("hidden")
-  }
-}
+// function dropProjects(){
+//   const Projects = document.getElementById("project-dropdown")
+//   const projectsClass = Projects?.classList
+//   if (projectsClass?.contains("hidden")) {
+//     projectsClass.remove("hidden")
+//   } else {
+//     projectsClass?.add("hidden")
+//   }
+// }
 
 </script>
 
 <template>
-  <!-- z-30 -->
   <nav
     id="navbar"
-    class="bg-gray-200 fixed w-full top-0 shadow bg-cover bg-fixed py-1 max-h-20"
+    class="bg-blue-100 w-full top-0 z-30 bg-cover py-1 max-h-20 absolute"
   >
     <div
       class="w-full flex flex-col items-center justify-between mt-0 px-2 py-2 lg:py-6"
     >
       <div class="pl-4">
         <a
-          class="text-gray-900 no-underline hover:no-underline font-bold text-4xl"
-          href="#"
+          class="text-blue-900 no-underline hover:no-underline font-black text-4xl"
+          href="/"
         >
           DEVRIKI
         </a>

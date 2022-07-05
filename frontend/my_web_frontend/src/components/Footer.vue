@@ -2,11 +2,11 @@
 
 <template>
   <footer
-    class="w-full bg-gray-200 border-t bottom-0 absolute flex flex-row md:max-h-40 p-5"
+    class="w-full bg-green-100 border-t bottom-0 flex flex-row md:max-h-40 p-5 mt-5 z-30"
   >
-    <span class="flex-1"><a href="">GITHUB</a></span>
-    <span class="flex-1"><a href="">EMAIL</a></span>
-    <span class="flex-1"><a href="">TWITTER</a></span>
+    <span class="flex-1"><a href="https://github.com/Erichy-dev" target="_blank">GITHUB</a></span>
+    <span class="flex-1"><a href="erichnyaga1@gmail.com" target="_blank">EMAIL</a></span>
+    <span class="flex-1"><a href="https://twitter.com/riki_dev_" target="_blank">TWITTER</a></span>
     <!-- <div class="mx-auto py-3">
       <div class="px-8"> -->
     <!-- <h3 class="font-bold">Social</h3>

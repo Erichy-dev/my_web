@@ -6,10 +6,10 @@ import FooterVue from "./components/Footer.vue";
 
 <template>
   <div
-    class="flex flex-row h-screen min-h-screen leading-relaxed tracking-wide"
+    class="flex flex-col h-screen min-h-screen leading-relaxed tracking-wide"
   >
-    <NavbarVue />
-    <RouterView />
+    <NavbarVue  />
+    <RouterView  />
     <FooterVue />
   </div>
 </template>
