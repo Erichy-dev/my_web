@@ -7,11 +7,11 @@
       <ul class="space-y-14">
         <li><a href="#PROJECTS">PROJECTS</a></li>
         <ul class="pl-2 space-y-12">
-          <li><a href="#GAMES">GAMES</a></li>
           <li><a href="#VueJs">VueJs</a></li>
           <li><a href="#Filesystem-API">Filesystem API</a></li>
           <li><a href="#ExpressJs">ExpressJs</a></li>
           <li><a href="#Django">Django</a></li>
+          <li><a href="#GAMES">GAMES</a></li>
         </ul>
         <li><a href="#Tech-Articles"> Tech Articles</a></li>
       </ul>

@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Guide from "../components/Guide.vue";
+import HomeGuide from "../components/HomeGuide.vue";
 
 const showDummy = ref(false);
 </script>
 
 <template>
   <main class="lg:items-start flex flex-row w-full pt-4">
-    <Guide />
+    <HomeGuide />
 
     <body class="flex-1 px-10 ml-40 lg:ml-72 font-normal mt-16">
       <welcome id="welcome" class="text-teal-700 italic"
-        >My name is Eric Nyaga. I'm a software engineer, passionate and
-        industrious currently studying at Mount Kenya University</welcome
+        >I'm Eric Nyaga, a passionate, brilliant, hardworking software developer
+        and writer at Mount Kenya University.</welcome
       >
       <section>
         <h1 id="PROJECTS" class="font-extrabold text-3xl py-5 text-emerald-800">
@@ -22,93 +22,88 @@ const showDummy = ref(false);
           04-07-22
         </button>
         <span class="text-sky-700" v-if="showDummy">
-          It's been nearly a semester using a 2GB RAM. I've had an breeze
-          experience building projects quickly since often I'd wait for the PC
-          to wake from the realms of dormancy. Sadly after covering other
-          expenses, I've saved just enough to enter the horrors of a 4GB
-          RAM.</span
+          It's been nearly a semester using a 2GB RAM. I've had a breeze
+          experience building projects. Often I'd wait minutes and hours for the
+          PC to wake from the realms of dormancy. Sadly after covering other
+          expenses, I've saved enough to enter the horrors of a 4GB RAM.</span
         >
-        <div>
-          <h2 id="GAMES" class="font-bold text-2xl text-blue-600">
-            <a href="#GAMES">GAMES</a>
-          </h2>
-          <p>
-            Created few game prototypes using PhaserJs. Phaser is a 2D game
-            engine that enables you to create HTML games. Try them out.
-          </p>
-          <section class="projects">
-            <h3 id="game-projects" class="font-bold text-lg">Game Projects</h3>
-            <ul>
-              <li>
-                Squirrel<a class="text-orange-800" href="https://github.com/Erichy-dev/Squirrel" target="_blank"
-                  >Github-link</a
-                >
-              </li>
-              <li>
-                Tile-hacker<a class="text-orange-800" href="https://github.com/Erichy-dev/TileHacker" target="_blank"
-                  >Github-link</a
-                >
-              </li>
-            </ul>
-          </section>
-          <div class="goals">
-            <h3 id="game-goals" class="font-bold text-lg">Game Goals</h3>
-            <ul class="">
-              <li>Shooting game using PhaserJs</li>
-              <li>Solar-system using ThreeJs</li>
-            </ul>
-          </div>
-        </div>
         <section id="VueJs">
           <h2 class="font-bold text-2xl text-blue-600">
             <a href="#VueJs">VueJs</a>
           </h2>
           <div>
-            This website is set up using VueJs. An incredibly dynamic framework
-            for SPAs. My bigest pro feature with Vue compared with React is the
-            ability to organize code such that logic can be separate from
-            another logic while still maintaining HTML and js/ts features.
-            features. However, compared to Angular Vue still has a mile to go in
-            support for typescript.<br />
+            This website uses VueJs. An incredibly dynamic framework for SPAs.
+            Vue is an incredible hybrid of React and Angular.<br />
             <section class="projects">
               <h3 id="vue-projects" class="font-bold text-xl">Vue Projects</h3>
               <ul class="">
                 <li>
-                  Cloned React Tutorial app. Perfect practice on
+                  Cloned React Tutorial app.<a
+                    href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
+                  >
+                    StackBlitz-link. </a
+                  >Perfect practice on
                   <span class="italic text-green-700"
                     >props, events, setup function, watchers,
-                    transition-animation, parent-child relationships. </span
-                  ><a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/projects/Clone-React" target="_blank"
+                    transition-animation, parent-child relationships. Displays
+                    Vue's strengths over React. The react tutorial app has quite
+                    a number of bugs.Try comparing
+                    <a
+                      href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
+                      >my-vue-app</a
+                    >
+                    with
+                    <a href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010"
+                      >react's-app</a
+                    ></span
+                  ><a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/projects/Clone-React"
+                    target="_blank"
                     >Github-link</a
                   >
                 </li>
                 <li>
                   Practice on props.
-                  <a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice1"
+                  <a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice1"
                     >Github-link</a
                   >
                 </li>
                 <li>
                   Practice on event-handlers.
-                  <a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice2" target="_blank"
+                  <a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice2"
+                    target="_blank"
                     >Github-link</a
                   >
                 </li>
                 <li>
                   Practice on transition-animation.
-                  <a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice4" target="_blank"
+                  <a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice4"
+                    target="_blank"
                     >Github-link</a
                   >
                 </li>
                 <li>
                   Practice on attribute-builtins.
-                  <a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice3" target="_blank"
+                  <a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice3"
+                    target="_blank"
                     >Github-link</a
                   >
                 </li>
                 <li>
                   Practice on provide-inject.
-                  <a class="text-orange-800" href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice5" target="_blank"
+                  <a
+                    class="text-orange-800"
+                    href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice5"
+                    target="_blank"
                     >Github-link</a
                   >
                 </li>
@@ -130,11 +125,11 @@ const showDummy = ref(false);
             <a href="#Filesystem-API">Filesystem API</a>
           </h2>
           <p>
-            A simple project to play with the filesystem api provided by
-            <span class="text-blue-700">nodejs</span>. The program determines
-            the size of a directory. The project was inspired by lack of an
-            ability to sort folders based on their size. At least not on my
-            phone or PC. Directories unlike files do not have a size attribute.
+            A simple project to play with the filesystem API nodeJs provides.
+            The program determines the size of a directory. The project's
+            inspiration is the lack of an ability to sort folders based on their
+            size. At least not on my phone or PC. Folders, unlike files, do not
+            have a size attribute.
             <a
               class="text-orange-800"
               href="https://github.com/Erichy-dev/fileapi"
@@ -154,13 +149,19 @@ const showDummy = ref(false);
             <ul>
               <li>
                 Routes & Middleware
-                <a class="text-orange-800" href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play01" target="_blank"
+                <a
+                  class="text-orange-800"
+                  href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play01"
+                  target="_blank"
                   >Github-link</a
                 >
               </li>
               <li>
                 Routes & Middleware
-                <a class="text-orange-800" href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play02" target="_blank"
+                <a
+                  class="text-orange-800"
+                  href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play02"
+                  target="_blank"
                   >Github-link</a
                 >
               </li>
@@ -176,13 +177,19 @@ const showDummy = ref(false);
             <ul>
               <li>
                 Schemas
-                <a class="text-orange-800" href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play01" target="_blank"
+                <a
+                  class="text-orange-800"
+                  href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play01"
+                  target="_blank"
                   >Github-link</a
                 >
               </li>
               <li>
                 Schemas part 2.
-                <a class="text-orange-800" href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play02" target="_blank"
+                <a
+                  class="text-orange-800"
+                  href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play02"
+                  target="_blank"
                   >Github-link</a
                 >
               </li>
@@ -194,17 +201,61 @@ const showDummy = ref(false);
             <a href="#Django">Django</a>
           </h2>
           Django is an exquisite backend framework. Unlike frameworks such as
-          Express, Django provides its own <span class="italic">ORM</span>.
+          Express, Django provides its <span class="italic">ORM</span>.
           Therefore the learning curve is exponential.<br />
           <h3 class="font-bold text-xl">Django Projects:</h3>
           <ul>
             <li>
               Tutorial App
-              <a class="text-orange-800" href="https://github.com/Erichy-dev/Django-practice" target="_blank">Github-link</a>
+              <a
+                class="text-orange-800"
+                href="https://github.com/Erichy-dev/Django-practice"
+                target="_blank"
+                >Github-link</a
+              >
             </li>
           </ul>
         </section>
       </section>
+      <div>
+        <h2 id="GAMES" class="font-bold text-2xl text-blue-600">
+          <a href="#GAMES">GAMES</a>
+        </h2>
+        <p>
+          Created few game prototypes using PhaserJs. Phaser is a 2D game engine
+          that enables you to create HTML games. Try them out.
+        </p>
+        <section class="projects">
+          <h3 id="game-projects" class="font-bold text-lg">Game Projects</h3>
+          <ul>
+            <li>
+              Squirrel
+              <a
+                class="text-orange-800"
+                href="https://github.com/Erichy-dev/Squirrel"
+                target="_blank"
+                >Github-link</a
+              >
+            </li>
+            <li>
+              Tile-hacker
+              <a
+                class="text-orange-800"
+                href="https://github.com/Erichy-dev/TileHacker"
+                target="_blank"
+                >Github-link</a
+              >
+            </li>
+          </ul>
+        </section>
+        <div class="goals">
+          <h3 id="game-goals" class="font-bold text-lg">Game Goals</h3>
+          <ul class="">
+            <li>Shooting game using PhaserJs</li>
+            <li>Solar-system using ThreeJs</li>
+          </ul>
+        </div>
+      </div>
       <section>
         <h1 id="Tech-Articles" class="font-extrabold text-3xl text-emerald-800">
           <a href="#Tech-Articles">Tech Articles</a>
@@ -213,13 +264,31 @@ const showDummy = ref(false);
           <ul>
             <li>
               Vue defineProps() vs provide-inject.
-              <a href="https://medium.com/@erichnyaga1/vue-props-in-composition-api-and-typescript-d3b35863fe27" target="_blank">LINK</a>
+              <a
+                class="text-orange-800"
+                href="https://medium.com/@erichnyaga1/vue-props-in-composition-api-and-typescript-d3b35863fe27"
+                target="_blank"
+                >LINK</a
+              >
             </li>
             <li>
               The Big-O Notation in Typescript.
-              <a href="https://medium.com/@erichnyaga1/the-big-o-notation-in-typescript-7f0a0221969d" target="_blank">LINK</a>
+              <a
+                class="text-orange-800"
+                href="https://medium.com/@erichnyaga1/the-big-o-notation-in-typescript-7f0a0221969d"
+                target="_blank"
+                >LINK</a
+              >
             </li>
-            <li>Singly-linked lists<a href="https://medium.com/@erichnyaga1/singly-linked-lists-in-typescript-346c14bc2392" target="_blank">LINK</a></li>
+            <li>
+              Singly-linked lists
+              <a
+                class="text-orange-800"
+                href="https://medium.com/@erichnyaga1/singly-linked-lists-in-typescript-346c14bc2392"
+                target="_blank"
+                >LINK</a
+              >
+            </li>
           </ul>
         </div>
       </section>
