@@ -14,7 +14,7 @@ import {
   <main
     class="w-full bg-green-100 border-t bottom-0 md:max-h-40 p-5 mt-0 z-30 flex flex-col dark:bg-slate-500"
   >
-    <footer class="flex sm:flex-col md:flex-row font-semibold">
+    <footer class="flex flex-row font-semibold">
       <a
         class="flex-1 text-sm font-serif"
         href="erichnyaga1@gmail.com"
