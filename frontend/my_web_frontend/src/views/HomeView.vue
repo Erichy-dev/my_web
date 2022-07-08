@@ -6,29 +6,32 @@ const showDummy = ref(false);
 </script>
 
 <template>
-  <main class="lg:items-start flex flex-row w-full pt-4">
+  <main class="lg:items-start flex flex-row w-full pt-4 dark:bg-slate-500">
     <HomeGuide />
 
-    <body class="flex-1 px-10 ml-40 lg:ml-72 font-normal mt-16">
-      <welcome id="welcome" class="text-teal-700 italic"
+    <body class="flex-1 px-10 ml-40 lg:ml-72 font-normal mt-16 pb-10">
+      <section id="welcome" class="text-teal-700 dark:text-slate-900 italic"
         >I'm Eric Nyaga, a passionate, brilliant, hardworking software developer
-        and writer at Mount Kenya University.</welcome
-      >
-      <section>
+        and writer at Mount Kenya University.
+      </section>
+      <section class="space-y-7">
         <h1 id="PROJECTS" class="font-extrabold text-3xl py-5 text-emerald-800">
           <a href="#PROJECTS">PROJECTS & PROTOS</a>
         </h1>
-        <button class="bg-green-400 rounded-md" @click="showDummy = !showDummy">
+        <button
+          class="bg-green-200 dark:bg-sky-900 rounded-md"
+          @click="showDummy = !showDummy"
+        >
           04-07-22
         </button>
-        <span class="text-sky-700" v-if="showDummy">
+        <span class="text-sky-700 dark:text-cyan-200" v-if="showDummy">
           It's been nearly a semester using a 2GB RAM. I've had a breeze
           experience building projects. Often I'd wait minutes and hours for the
           PC to wake from the realms of dormancy. Sadly after covering other
           expenses, I've saved enough to enter the horrors of a 4GB RAM.</span
         >
         <section id="VueJs">
-          <h2 class="font-bold text-2xl text-blue-600">
+          <h2 class="font-bold text-2xl text-blue-600 dark:text-blue-900">
             <a href="#VueJs">VueJs</a>
           </h2>
           <div>
@@ -43,30 +46,33 @@ const showDummy = ref(false);
                   >
                     StackBlitz-link. </a
                   >Perfect practice on
-                  <span class="italic text-green-700"
+                  <span class="italic text-green-700 dark:text-black dark:font-bold"
                     >props, events, setup function, watchers,
-                    transition-animation, parent-child relationships. Displays
-                    Vue's strengths over React. The react tutorial app has quite
-                    a number of bugs.Try comparing
-                    <a
-                      href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
-                      >my-vue-app</a
-                    >
-                    with
-                    <a href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010"
-                      >react's-app</a
-                    ></span
+                    transition-animation, parent-child relationships.</span
+                  >
+                  The app displays Vue's strengths over React. The react
+                  tutorial app has quite a number of bugs.Try comparing
+                  <a
+                    class="text-orange-800 dark:text-pink-900"
+                    href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
+                    >my-vue-app</a
+                  >
+                  with
+                  <a
+                    class="text-orange-800 dark:text-pink-900"
+                    href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010"
+                    >react's-app. </a
                   ><a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/projects/Clone-React"
                     target="_blank"
-                    >Github-link</a
+                    >link-to-github</a
                   >
                 </li>
                 <li>
                   Practice on props.
                   <a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice1"
                     >Github-link</a
                   >
@@ -74,7 +80,7 @@ const showDummy = ref(false);
                 <li>
                   Practice on event-handlers.
                   <a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice2"
                     target="_blank"
                     >Github-link</a
@@ -83,7 +89,7 @@ const showDummy = ref(false);
                 <li>
                   Practice on transition-animation.
                   <a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice4"
                     target="_blank"
                     >Github-link</a
@@ -92,7 +98,7 @@ const showDummy = ref(false);
                 <li>
                   Practice on attribute-builtins.
                   <a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice3"
                     target="_blank"
                     >Github-link</a
@@ -101,7 +107,7 @@ const showDummy = ref(false);
                 <li>
                   Practice on provide-inject.
                   <a
-                    class="text-orange-800"
+                    class="text-orange-800 dark:text-pink-900"
                     href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice5"
                     target="_blank"
                     >Github-link</a
@@ -121,7 +127,7 @@ const showDummy = ref(false);
           </div>
         </section>
         <section id="Filesystem-API">
-          <h2 class="font-bold text-xl text-blue-600">
+          <h2 class="font-bold text-xl text-blue-600 dark:text-blue-900">
             <a href="#Filesystem-API">Filesystem API</a>
           </h2>
           <p>
@@ -131,7 +137,7 @@ const showDummy = ref(false);
             size. At least not on my phone or PC. Folders, unlike files, do not
             have a size attribute.
             <a
-              class="text-orange-800"
+              class="text-orange-800 dark:text-pink-900"
               href="https://github.com/Erichy-dev/fileapi"
               target="_blank"
               >Github-link</a
@@ -139,7 +145,10 @@ const showDummy = ref(false);
           </p>
         </section>
         <section>
-          <h2 id="ExpressJs" class="font-bold text-2xl text-blue-600">
+          <h2
+            id="ExpressJs"
+            class="font-bold text-2xl text-blue-600 dark:text-blue-900"
+          >
             <a href="#ExpressJs">ExpressJs</a>
           </h2>
           <section class="projects">
@@ -150,7 +159,7 @@ const showDummy = ref(false);
               <li>
                 Routes & Middleware
                 <a
-                  class="text-orange-800"
+                  class="text-orange-800 dark:text-pink-900"
                   href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play01"
                   target="_blank"
                   >Github-link</a
@@ -159,7 +168,7 @@ const showDummy = ref(false);
               <li>
                 Routes & Middleware
                 <a
-                  class="text-orange-800"
+                  class="text-orange-800 dark:text-pink-900"
                   href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play02"
                   target="_blank"
                   >Github-link</a
@@ -169,7 +178,10 @@ const showDummy = ref(false);
           </section>
         </section>
         <section>
-          <h2 id="MongoDb" class="font-bold text-2xl text-blue-600">
+          <h2
+            id="MongoDb"
+            class="font-bold text-2xl text-blue-600 dark:text-blue-900"
+          >
             <a href="#MongoDb">MongoDb</a>
           </h2>
           <section class="projects">
@@ -178,7 +190,7 @@ const showDummy = ref(false);
               <li>
                 Schemas
                 <a
-                  class="text-orange-800"
+                  class="text-orange-800 dark:text-pink-900"
                   href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play01"
                   target="_blank"
                   >Github-link</a
@@ -187,7 +199,7 @@ const showDummy = ref(false);
               <li>
                 Schemas part 2.
                 <a
-                  class="text-orange-800"
+                  class="text-orange-800 dark:text-pink-900"
                   href="https://github.com/Erichy-dev/mongodb-practice/tree/master/play02"
                   target="_blank"
                   >Github-link</a
@@ -197,7 +209,10 @@ const showDummy = ref(false);
           </section>
         </section>
         <section>
-          <h2 id="Django" class="font-bold text-2xl text-blue-600">
+          <h2
+            id="Django"
+            class="font-bold text-2xl text-blue-600 dark:text-blue-900"
+          >
             <a href="#Django">Django</a>
           </h2>
           Django is an exquisite backend framework. Unlike frameworks such as
@@ -208,7 +223,7 @@ const showDummy = ref(false);
             <li>
               Tutorial App
               <a
-                class="text-orange-800"
+                class="text-orange-800 dark:text-pink-900"
                 href="https://github.com/Erichy-dev/Django-practice"
                 target="_blank"
                 >Github-link</a
@@ -216,46 +231,49 @@ const showDummy = ref(false);
             </li>
           </ul>
         </section>
-      </section>
-      <div>
-        <h2 id="GAMES" class="font-bold text-2xl text-blue-600">
-          <a href="#GAMES">GAMES</a>
-        </h2>
-        <p>
-          Created few game prototypes using PhaserJs. Phaser is a 2D game engine
-          that enables you to create HTML games. Try them out.
-        </p>
-        <section class="projects">
-          <h3 id="game-projects" class="font-bold text-lg">Game Projects</h3>
-          <ul>
-            <li>
-              Squirrel
-              <a
-                class="text-orange-800"
-                href="https://github.com/Erichy-dev/Squirrel"
-                target="_blank"
-                >Github-link</a
-              >
-            </li>
-            <li>
-              Tile-hacker
-              <a
-                class="text-orange-800"
-                href="https://github.com/Erichy-dev/TileHacker"
-                target="_blank"
-                >Github-link</a
-              >
-            </li>
-          </ul>
+        <section>
+          <h2
+            id="GAMES"
+            class="font-bold text-2xl text-blue-600 dark:text-blue-900"
+          >
+            <a href="#GAMES">GAMES</a>
+          </h2>
+          <p>
+            Created few game prototypes using PhaserJs. Phaser is a 2D game
+            engine that enables you to create HTML games. Try them out.
+          </p>
+          <section class="projects">
+            <h3 id="game-projects" class="font-bold text-lg">Game Projects</h3>
+            <ul>
+              <li>
+                Squirrel
+                <a
+                  class="text-orange-800 dark:text-pink-900"
+                  href="https://github.com/Erichy-dev/Squirrel"
+                  target="_blank"
+                  >Github-link</a
+                >
+              </li>
+              <li>
+                Tile-hacker
+                <a
+                  class="text-orange-800 dark:text-pink-900"
+                  href="https://github.com/Erichy-dev/TileHacker"
+                  target="_blank"
+                  >Github-link</a
+                >
+              </li>
+            </ul>
+          </section>
+          <div class="goals">
+            <h3 id="game-goals" class="font-bold text-lg">Game Goals</h3>
+            <ul class="">
+              <li>Shooting game using PhaserJs</li>
+              <li>Solar-system using ThreeJs</li>
+            </ul>
+          </div>
         </section>
-        <div class="goals">
-          <h3 id="game-goals" class="font-bold text-lg">Game Goals</h3>
-          <ul class="">
-            <li>Shooting game using PhaserJs</li>
-            <li>Solar-system using ThreeJs</li>
-          </ul>
-        </div>
-      </div>
+      </section>
       <section>
         <h1 id="Tech-Articles" class="font-extrabold text-3xl text-emerald-800">
           <a href="#Tech-Articles">Tech Articles</a>
@@ -265,7 +283,7 @@ const showDummy = ref(false);
             <li>
               Vue defineProps() vs provide-inject.
               <a
-                class="text-orange-800"
+                class="text-orange-800 dark:text-pink-900"
                 href="https://medium.com/@erichnyaga1/vue-props-in-composition-api-and-typescript-d3b35863fe27"
                 target="_blank"
                 >LINK</a
@@ -274,7 +292,7 @@ const showDummy = ref(false);
             <li>
               The Big-O Notation in Typescript.
               <a
-                class="text-orange-800"
+                class="text-orange-800 dark:text-pink-900"
                 href="https://medium.com/@erichnyaga1/the-big-o-notation-in-typescript-7f0a0221969d"
                 target="_blank"
                 >LINK</a
@@ -283,7 +301,7 @@ const showDummy = ref(false);
             <li>
               Singly-linked lists
               <a
-                class="text-orange-800"
+                class="text-orange-800 dark:text-pink-900"
                 href="https://medium.com/@erichnyaga1/singly-linked-lists-in-typescript-346c14bc2392"
                 target="_blank"
                 >LINK</a

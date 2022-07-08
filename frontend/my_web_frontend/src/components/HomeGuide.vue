@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 <template>
   <main
-    class="border-r-2 px-2 font-semibold text-cyan-500 h-screen lg:px-16 fixed bg-slate-100 top-0"
+    class="border-r-2 px-2 font-semibold text-cyan-500 h-screen lg:px-16 fixed bg-slate-100 top-0 dark:bg-slate-500 dark:text-cyan-900 dark:border-none"
   >
     <div class="mt-20">
       <ul class="space-y-14">

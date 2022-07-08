@@ -1,34 +1,55 @@
 <script setup lang="ts">
-// function toggleMenu(e: any) {
-//   const droppedMenu = document.getElementById("nav-content");
-//   const menuClass = droppedMenu?.classList;
-//   const navClass = document.getElementById("navbar")?.classList
-//   if (menuClass?.contains("hidden")) {
-//     menuClass.remove("hidden");
-//     navClass?.remove("max-h-20")
-//   } else {
-//     menuClass?.add("hidden");
-//     navClass?.add("max-h-20")
-//   }
-// }
+import { SunIcon } from "@heroicons/vue/solid";
+import { ref } from "vue";
 
+/*
+function toggleMenu(e: any) {
+  const droppedMenu = document.getElementById("nav-content");
+  const menuClass = droppedMenu?.classList;
+  const navClass = document.getElementById("navbar")?.classList
+  if (menuClass?.contains("hidden")) {
+    menuClass.remove("hidden");
+    navClass?.remove("max-h-20")
+  } else {
+    menuClass?.add("hidden");
+    navClass?.add("max-h-20")
+  }
+}
 
-// function dropProjects(){
-//   const Projects = document.getElementById("project-dropdown")
-//   const projectsClass = Projects?.classList
-//   if (projectsClass?.contains("hidden")) {
-//     projectsClass.remove("hidden")
-//   } else {
-//     projectsClass?.add("hidden")
-//   }
-// }
+function dropProjects(){
+  const Projects = document.getElementById("project-dropdown")
+  const projectsClass = Projects?.classList
+  if (projectsClass?.contains("hidden")) {
+    projectsClass.remove("hidden")
+  } else {
+    projectsClass?.add("hidden")
+  }
+}
+*/
 
+const bright = ref<boolean>(true)
+const dark = ref<boolean>(false)
+function toggleLights(){
+  // eslint-disable-next-line no-undef
+  let html: HTMLCollectionOf<HTMLHtmlElement> =
+    document.getElementsByTagName("html");
+  let darkened: string = html[0].className
+  if (darkened === "dark"){
+    html[0].className = ""
+    bright.value = true;
+    dark.value = false;
+  } else {
+    html[0].className = "dark"
+    bright.value = false;
+    dark.value = true;
+  }
+}
 </script>
 
 <template>
   <nav
     id="navbar"
-    class="bg-blue-100 w-full top-0 z-30 bg-cover py-1 max-h-20 absolute"
+    class="bg-blue-100 w-full top-0 z-20 bg-cover py-1 max-h-20 absolute dark:bg-slate-500"
   >
     <div
       class="w-full flex flex-col items-center justify-between mt-0 px-2 py-2 lg:py-6"
@@ -100,4 +121,8 @@
       </div> -->
     </div>
   </nav>
+  <div class="fixed z-30 m-2 left-24 top-4" @click="toggleLights">
+    <SunIcon v-if="bright" class="w-10 h-10 text-amber-400" />
+    <SunIcon v-if="dark" class="w-10 h-10 text-slate-800" />
+  </div>
 </template>
