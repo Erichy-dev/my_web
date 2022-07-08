@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import HomeGuide from "../components/HomeGuide.vue";
+import { MenuIcon } from "@heroicons/vue/solid"
 
 const showDummy = ref(false);
 </script>
@@ -9,7 +10,9 @@ const showDummy = ref(false);
   <main class="lg:items-start flex flex-row w-full pt-4 dark:bg-slate-500">
     <HomeGuide />
 
-    <body class="flex-1 px-10 ml-40 lg:ml-72 font-normal mt-16 pb-10">
+    <body
+      class="flex-1 px-10 sm:ml-0 md:ml-40 lg:ml-72 font-normal mt-16 pb-10"
+    >
       <section id="welcome" class="text-teal-700 dark:text-slate-900 italic"
         >I'm Eric Nyaga, a passionate, brilliant, hardworking software developer
         and writer at Mount Kenya University.

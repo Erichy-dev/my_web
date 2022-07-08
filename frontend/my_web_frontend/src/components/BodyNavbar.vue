@@ -2,47 +2,31 @@
 import { SunIcon } from "@heroicons/vue/solid";
 import { ref } from "vue";
 
-/*
-function toggleMenu(e: any) {
-  const droppedMenu = document.getElementById("nav-content");
-  const menuClass = droppedMenu?.classList;
-  const navClass = document.getElementById("navbar")?.classList
-  if (menuClass?.contains("hidden")) {
-    menuClass.remove("hidden");
-    navClass?.remove("max-h-20")
-  } else {
-    menuClass?.add("hidden");
-    navClass?.add("max-h-20")
-  }
+const bright = ref<boolean>(true);
+const dark = ref<boolean>(false);
+function toggleLights() {
+  toggler(bright.value, dark.value);
 }
-
-function dropProjects(){
-  const Projects = document.getElementById("project-dropdown")
-  const projectsClass = Projects?.classList
-  if (projectsClass?.contains("hidden")) {
-    projectsClass.remove("hidden")
-  } else {
-    projectsClass?.add("hidden")
-  }
-}
-*/
-
-const bright = ref<boolean>(true)
-const dark = ref<boolean>(false)
-function toggleLights(){
+</script>
+<script lang="ts">
+//tests
+//bright is never equal to dark
+//the html collection only has one element.
+export function toggler(bright: boolean, dark: boolean) {
   // eslint-disable-next-line no-undef
   let html: HTMLCollectionOf<HTMLHtmlElement> =
     document.getElementsByTagName("html");
-  let darkened: string = html[0].className
-  if (darkened === "dark"){
-    html[0].className = ""
-    bright.value = true;
-    dark.value = false;
+  let darkened: string = html[0].className;
+  if (darkened === "dark") {
+    html[0].className = "";
+    bright = true;
+    dark = false;
   } else {
-    html[0].className = "dark"
-    bright.value = false;
-    dark.value = true;
+    html[0].className = "dark";
+    bright = false;
+    dark = true;
   }
+  return dark === bright;
 }
 </script>
 
@@ -121,8 +105,11 @@ function toggleLights(){
       </div> -->
     </div>
   </nav>
-  <div class="fixed z-30 m-2 left-24 top-4" @click="toggleLights">
-    <SunIcon v-if="bright" class="w-10 h-10 text-amber-400" />
-    <SunIcon v-if="dark" class="w-10 h-10 text-slate-800" />
+  <div
+    class="absolute md:fixed z-30 m-2 right-0 md:left-24 top-0 md:top-4"
+    @click="toggleLights"
+  >
+    <SunIcon v-if="bright" class="md:w-10 w-7 md:h-10 h-7 text-amber-400" />
+    <SunIcon v-if="dark" class="md:w-10 w-7 md:h-10 h-7 text-slate-800" />
   </div>
 </template>
