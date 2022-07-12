@@ -61,6 +61,7 @@
             <a
               class="text-orange-800 dark:text-pink-900"
               href="https://github.com/Erichy-dev/Vue-Practices/tree/main/Guide/components-in-depth-practice1"
+              target="_blank"
               >Github-link</a
             >
           </li>

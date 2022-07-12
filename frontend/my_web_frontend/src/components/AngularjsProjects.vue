@@ -15,12 +15,6 @@
               href="https://github.com/Erichy-dev/Angular-practices/tree/master/list_with_transitions"
               >Github-link. </a
             >
-            <a
-              target="_blank"
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              >StackBlitz-link</a
-            >
           </li>
           <li>
             Cloned Vue's Grid with sort and filter app.
@@ -30,26 +24,14 @@
               target="_blank"
               >Github-link. </a
             >
-            <a
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              target="_blank"
-              >Stackblitz-link.</a
-            >
           </li>
           <li>
             Cloned Vue's Markdown editor.
             <a
               class="text-orange-800 dark:text-pink-900"
-              href="https://github.com/Erichy-dev/Angular-practices/tree/master/markdown_editor"
+              href="https://github.com/Erichy-dev/Angular-Practices/tree/master/markdown_editor"
               target="_blank"
               >Github-link. </a
-            >
-            <a
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              target="_blank"
-              >StackBlitz-link</a
             >
           </li>
         </ul>

@@ -11,15 +11,9 @@
             Cloned Vue's List With Transitions app.
             <a
               class="text-orange-800 dark:text-pink-900"
-              href="https://github.com/Erichy-dev/React-practices/tree/master/list_with_transitions"
+              href="https://github.com/Erichy-dev/React-Practices/tree/master/list_with_transitions"
               target="_blank"
               >Github-link. </a
-            >
-            <a
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              target="_blank"
-              >StackBlitz-link</a
             >
           </li>
           <li>
@@ -30,12 +24,6 @@
               target="_blank"
               >Github-link. </a
             >
-            <a
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              target="_blank"
-              >Stackblitz-link.</a
-            >
           </li>
           <li>
             Cloned Vue's Markdown editor.
@@ -44,12 +32,6 @@
               href="https://github.com/Erichy-dev/React-practices/tree/master/Markdown_Editor"
               target="_blank"
               >Github-link. </a
-            >
-            <a
-              class="text-orange-800 dark:text-pink-900"
-              href=""
-              target="_blank"
-              >StackBlitz-link</a
             >
           </li>
         </ul>
