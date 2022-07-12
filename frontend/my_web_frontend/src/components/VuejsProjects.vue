@@ -12,6 +12,7 @@
           <li>
             Cloned React Tutorial app.<a
               href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
+              target="_blank"
             >
               StackBlitz-link. </a
             >Perfect practice on
@@ -24,12 +25,14 @@
             <a
               class="text-orange-800 dark:text-pink-900"
               href="https://stackblitz.com/edit/vitejs-vite-gz1eeu?terminal=dev"
+              target="_blank"
               >my-vue-app</a
             >
             with
             <a
               class="text-orange-800 dark:text-pink-900"
               href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010"
+              target="_blank"
               >react's-app. </a
             ><a
               class="text-orange-800 dark:text-pink-900"
@@ -43,11 +46,13 @@
             <a
               class="text-orange-800 dark:text-pink-900"
               href="https://github.com/Erichy-dev/ngarisha...frontend"
+              target="_blank"
               >Github-link.
             </a>
             <a
               class="text-red-900 dark:text-pink-900"
               href="https://ngarisha.herokuapp.com"
+              target="_blank"
               >Heroku</a
             >
           </li>
