@@ -1,6 +1,6 @@
 <template>
   <section id="Filesystem-API">
-    <h2 class="font-bold text-xl text-blue-600 dark:text-blue-900">
+    <h2 class="font-bold text-4xl md:text-7xl self-center text-slate-400">
       <a href="#Filesystem-API">Filesystem API</a>
     </h2>
     <p>

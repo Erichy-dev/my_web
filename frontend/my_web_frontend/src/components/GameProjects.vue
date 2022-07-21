@@ -1,14 +1,22 @@
 <template>
-  <section>
-    <h2 id="GAMES" class="font-bold text-2xl text-blue-600 dark:text-blue-900">
-      <a href="#GAMES">GAMES</a>
-    </h2>
+  <section id="GamesSection">
+    <div class="flex flex-row">
+      <h2
+        id="GAMES"
+        class="font-bold text-4xl md:text-7xl self-center text-blue-300"
+      >
+        <a href="#GAMES">GAMES</a>
+      </h2>
+      <img src="/phaser.png" alt="phaser logo" class="logo w-3/12 h-1/4" />
+    </div>
     <p>
       Created few game prototypes using PhaserJs. Phaser is a 2D game engine
       that enables you to create HTML games. Try them out.
     </p>
-    <section class="projects">
-      <h3 id="game-projects" class="font-bold text-lg">Game Projects</h3>
+    <section id="GameProjectsSection">
+      <h3 id="game-projects" class="font-bold text-xl underline m-3">
+        Game Projects
+      </h3>
       <ul>
         <li>
           Squirrel
@@ -30,8 +38,10 @@
         </li>
       </ul>
     </section>
-    <div class="goals">
-      <h3 id="game-goals" class="font-bold text-lg">Game Goals</h3>
+    <div id="GameGoalsSection">
+      <h3 id="game-goals" class="font-bold text-xl underline m-3">
+        Game Goals
+      </h3>
       <ul class="">
         <li>Shooting game using PhaserJs</li>
         <li>Solar-system using ThreeJs</li>

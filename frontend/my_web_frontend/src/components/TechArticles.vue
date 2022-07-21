@@ -1,6 +1,9 @@
 <template>
-  <section>
-    <h1 id="Tech-Articles" class="font-extrabold text-3xl text-emerald-800">
+  <section id="TechArticlesSection">
+    <h1
+      id="Tech-Articles"
+      class="font-extrabold text-3xl md:text-5xl lg:text-7xl py-5 text-cyan-800"
+    >
       <a href="#Tech-Articles">Tech Articles</a>
     </h1>
     <div>

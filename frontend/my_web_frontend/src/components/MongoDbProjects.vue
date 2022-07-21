@@ -1,13 +1,16 @@
 <template>
-  <section>
-    <h2
-      id="MongoDb"
-      class="font-bold text-2xl text-blue-600 dark:text-blue-900"
-    >
-      <a href="#MongoDb">MongoDb</a>
-    </h2>
-    <section class="projects">
-      <h3 class="font-bold text-xl">MongoDb Projects</h3>
+  <section id="MongoDbSection">
+    <div class="flex flex-row">
+      <h2
+        id="MongoDb"
+        class="font-bold text-4xl md:text-7xl self-center text-green-700"
+      >
+        <a href="#MongoDb">MongoDb</a>
+      </h2>
+      <img src="/mongodb.png" alt="mongodb logo" class="logo w-3/12 h-1/4" />
+    </div>
+    <section id="MongoDbProjects">
+      <h3 class="font-bold text-xl underline m-3">MongoDb Projects</h3>
       <ul>
         <li>
           Schemas

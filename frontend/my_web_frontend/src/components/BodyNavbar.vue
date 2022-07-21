@@ -5,55 +5,47 @@ import { ref } from "vue";
 const bright = ref<boolean>(true);
 const dark = ref<boolean>(false);
 function toggleLights() {
-  toggler(bright.value, dark.value);
+  toggler(bright, dark);
 }
 </script>
 <script lang="ts">
+import type { Ref } from "vue";
 //tests
 //bright is never equal to dark
 //the html collection only has one element.
-export function toggler(bright: boolean, dark: boolean) {
+export function toggler(bright: Ref<boolean>, dark: Ref<boolean>): boolean {
   // eslint-disable-next-line no-undef
   let html: HTMLCollectionOf<HTMLHtmlElement> =
     document.getElementsByTagName("html");
   let darkened: string = html[0].className;
   if (darkened === "dark") {
     html[0].className = "";
-    bright = true;
-    dark = false;
+    bright.value = true;
+    dark.value = false;
   } else {
     html[0].className = "dark";
-    bright = false;
-    dark = true;
+    bright.value = false;
+    dark.value = true;
   }
-  return dark === bright;
+  return dark.value === bright.value;
 }
 </script>
 
 <template>
-  <nav
-    id="navbar"
-    class="bg-blue-100 w-full top-0 z-20 bg-cover py-1 max-h-20 absolute dark:bg-slate-500"
-  >
-    <div
-      class="w-full flex flex-col items-center justify-between mt-0 px-2 py-2 lg:py-6"
-    >
-      <div class="pl-4">
+  <main class="flex-1 flex flex-row dark:bg-slate-500">
+    <nav id="navbar" class="flex-1 flex flex-col">
+      <div class="p-4 lg:my-4 self-end lg:w-8/12 md:w-7/12">
         <a
-          class="text-blue-900 no-underline hover:no-underline font-black text-4xl"
+          class="shadow-black shadow-lg drop-shadow-2xl text-blue-600 no-underline hover:no-underline font-black text-3xl md:text-7xl lg:text-9xl"
           href="/"
         >
-          DEVRIKI
+          DEV_RIKI
         </a>
       </div>
-
+    </nav>
+    <div class="self-center mr-10" @click="toggleLights">
+      <SunIcon v-if="bright" class="md:w-14 w-7 md:h-14 h-7 text-blue-500" />
+      <SunIcon v-if="dark" class="md:w-14 w-7 md:h-14 h-7 text-black" />
     </div>
-  </nav>
-  <div
-    class="absolute md:fixed z-30 m-2 right-0 md:left-24 top-0 md:top-4 w-10"
-    @click="toggleLights"
-  >
-    <SunIcon v-if="bright" class="md:w-10 w-7 md:h-10 h-7 text-amber-400" />
-    <SunIcon v-if="dark" class="md:w-10 w-7 md:h-10 h-7 text-slate-800" />
-  </div>
+  </main>
 </template>

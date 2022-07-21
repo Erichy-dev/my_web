@@ -1,13 +1,22 @@
 <template>
-  <section>
-    <h2
-      id="ExpressJs"
-      class="font-bold text-2xl text-blue-600 dark:text-blue-900"
-    >
-      <a href="#ExpressJs">ExpressJs</a>
-    </h2>
-    <section class="projects">
-      <h3 id="express-projects" class="font-bold text-xl">Express Projects</h3>
+  <section id="ExpressJsSection">
+    <div class="flex flex-row">
+      <h2
+        id="ExpressJs"
+        class="font-bold text-4xl md:text-7xl self-center text-slate-600"
+      >
+        <a href="#ExpressJs">ExpressJs</a>
+      </h2>
+      <img
+        src="/express.png"
+        alt="express logo"
+        class="logo w-3/12 h-1/4 shadow-black shadow-lg drop-shadow-lg"
+      />
+    </div>
+    <section class="ExpressProjectsSection">
+      <h3 id="express-projects" class="font-bold text-xl underline m-3">
+        Express Projects
+      </h3>
       <ul>
         <li>
           Routes & Middleware

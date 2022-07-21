@@ -1,13 +1,20 @@
+<script lang="ts" setup></script>
+
 <template>
   <section id="VueJs">
-    <h2 class="font-bold text-2xl text-blue-600 dark:text-blue-900">
-      <a href="#VueJs">VueJs</a>
-    </h2>
-    <div>
+    <div id="vueHead" class="flex flex-row">
+      <h2 class="font-bold text-4xl md:text-7xl self-center text-emerald-400">
+        <a href="#VueJs">VueJs...</a>
+      </h2>
+      <img alt="Vue logo" class="logo w-3/12 h-1/4" src="@/assets/logo.svg" />
+    </div>
+    <div id="VueJsSection">
       This website uses VueJs. An incredibly dynamic framework for SPAs. Vue is
-      an incredible hybrid of React and Angular.<br />
+      a hybrid of React and Angular.<br />
       <section class="projects">
-        <h3 id="vue-projects" class="font-bold text-xl">Vue Projects</h3>
+        <h3 id="vue-projects" class="font-bold text-xl underline m-3">
+          Vue Projects
+        </h3>
         <ul class="">
           <li>
             Cloned React Tutorial app.<a
@@ -103,8 +110,8 @@
           </li>
         </ul>
       </section>
-      <section class="vue-goals">
-        <h4 class="font-bold text-lg">Vue Goals</h4>
+      <section id="vueGoals">
+        <h4 class="font-bold text-xl underline m-3">Vue Goals</h4>
         <ul>
           <li>
             Merge the filesystem api I created to display size of folders in a
