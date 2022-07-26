@@ -13,27 +13,21 @@ import { MailIcon } from "@heroicons/vue/solid";
         href="mailto:erichnyaga1@gmail.com"
         target="_blank"
       >
-        <MailIcon class="h-5 w-5 md:h-11 md:w-11 text-slate-400 self-center" />
+        <MailIcon class="w-6/12 text-slate-400 self-center" />
       </a>
       <a
         class="flex-1 hover:text-orange-800 text-sm font-serif flex flex-col"
         href="https://www.fiverr.com/rikidev_"
         target="_blank"
       >
-        <img
-          src="/fiverr.png"
-          class="h-5 w-5 md:h-16 md:w-16 text-slate-400 self-center"
-        />
+        <img src="/fiverr.png" class="w-6/12 text-slate-400 self-center" />
       </a>
       <a
         class="flex-1 hover:text-orange-800 text-sm font-serif flex flex-col"
         href="https://github.com/Erichy-dev"
         target="_blank"
       >
-        <img
-          src="/github.png"
-          class="h-5 w-5 md:h-16 md:w-16 text-slate-400 self-center"
-        />
+        <img src="/github.png" class="w-6/12 text-slate-400 self-center" />
       </a>
       <a
         class="flex-1 hover:text-orange-800 text-sm font-serif flex flex-col"
@@ -42,7 +36,7 @@ import { MailIcon } from "@heroicons/vue/solid";
       >
         <img
           src="/stackblitz.png"
-          class="h-5 w-5 md:h-11 md:w-11 text-slate-400 self-center"
+          class="h-4/6 w-5/12 text-slate-400 self-center"
         />
       </a>
       <a
@@ -52,7 +46,7 @@ import { MailIcon } from "@heroicons/vue/solid";
       >
         <img
           src="/codepen.png"
-          class="h-5 w-5 md:h-14 md:w-14 text-slate-400 self-center"
+          class="h-5/6 w-5/12 text-slate-400 self-center"
         />
       </a>
       <a
@@ -60,10 +54,7 @@ import { MailIcon } from "@heroicons/vue/solid";
         href="https://medium.com/@erichnyaga1"
         target="_blank"
       >
-        <img
-          src="/medium.png"
-          class="h-5 w-5 md:h-14 md:w-14 text-slate-400 self-center"
-        />
+        <img src="/medium.png" class="w-6/12 text-slate-400 self-center" />
       </a>
       <a
         class="flex-1 hover:text-orange-800 text-sm font-serif flex flex-col"
@@ -72,7 +63,7 @@ import { MailIcon } from "@heroicons/vue/solid";
       >
         <img
           src="/twitter.png"
-          class="h-5 w-5 md:h-12 md:w-12 text-slate-400 self-center"
+          class="w-5/12 h-5/6 text-slate-400 self-center"
         />
       </a>
       <a
@@ -80,10 +71,7 @@ import { MailIcon } from "@heroicons/vue/solid";
         href="https://wa.me/+254795829177"
         target="_blank"
       >
-        <img
-          src="/whatsapp.png"
-          class="h-5 w-5 md:h-16 md:w-16 text-slate-400 self-center"
-        />
+        <img src="/whatsapp.png" class="w-6/12 text-slate-400 self-center" />
       </a>
     </footer>
     <div class="flex-1 self-center text-green-700 dark:text-green-300">

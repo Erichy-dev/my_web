@@ -46,7 +46,7 @@ function outsideToggle(e: Event) {
     <main
       ref="guide"
       id="homeGuide"
-      class="hidden md:block overflow-auto font-semibold text-cyan-700 h-screen px-0 bg-gradient-to-b from-blue-500 to-cyan-200 dark:text-cyan-900 dark:from-zinc-400 dark:to-slate-500 text-lg fixed"
+      class="hidden md:block overflow-auto font-semibold text-cyan-700 h-screen px-0 bg-gradient-to-b from-blue-500 to-cyan-200 dark:text-cyan-900 dark:via-orange-300 dark:from-slate-600 dark:to-slate-600 text-lg fixed"
     >
       <div
         class="mt-20 rounded-full shadow-black shadow-lg drop-shadow-2xl p-7"

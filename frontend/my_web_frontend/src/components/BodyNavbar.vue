@@ -36,7 +36,7 @@ export function toggler(bright: Ref<boolean>, dark: Ref<boolean>): boolean {
     <nav id="navbar" class="flex-1 flex flex-col">
       <div class="p-4 lg:my-4 self-end lg:w-8/12 md:w-7/12">
         <a
-          class="shadow-black shadow-lg drop-shadow-2xl text-blue-600 no-underline hover:no-underline font-black text-3xl md:text-7xl lg:text-9xl"
+          class="shadow-black shadow-lg drop-shadow-2xl text-blue-600 no-underline hover:no-underline font-black text-3xl md:text-7xl lg:text-8xl"
           href="/"
         >
           DEV_RIKI
@@ -44,8 +44,8 @@ export function toggler(bright: Ref<boolean>, dark: Ref<boolean>): boolean {
       </div>
     </nav>
     <div class="self-center mr-10" @click="toggleLights">
-      <SunIcon v-if="bright" class="md:w-14 w-7 md:h-14 h-7 text-blue-500" />
-      <SunIcon v-if="dark" class="md:w-14 w-7 md:h-14 h-7 text-black" />
+      <img src="/external-light.png" v-if="bright" class="w-4/12 h-3/6" />
+      <img src="/external-dark.png" v-if="dark" class="w-4/12 h-3/6" />
     </div>
   </main>
 </template>
