@@ -19,16 +19,7 @@
       </h3>
       <ul>
         <li>
-          Serve Vue-router in the backend
-          <a
-            class="text-orange-800 dark:text-pink-900"
-            href="https://github.com/Erichy-dev/ngarisha...expressBackend"
-            target="_blank"
-            >Github-link</a
-          >
-        </li>
-        <li>
-          Routes & Middleware
+          Routes & Middleware part 1
           <a
             class="text-orange-800 dark:text-pink-900"
             href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play01"
@@ -37,7 +28,7 @@
           >
         </li>
         <li>
-          Routes & Middleware
+          Routes & Middleware part 1
           <a
             class="text-orange-800 dark:text-pink-900"
             href="https://github.com/Erichy-dev/ExpressJs-practices/tree/master/play02"
